@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Divide</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">MATH APP ÷</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" >
+        <nav>
+            <ul class="navList">
+                <li><a href="IndexAdd.html">Addition</a></li>
+                <li><a href="/subtract.html">Subtraction</a></li>
+                <li><a href="multiply.html">Multiplication</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+        <section>
+            <div class="game-wrapper">
+                <div class="number-wrapper">
+                     <div class="num1"><h1 id="num1">Number</h1></div>
+                     <div class="sym"><h1>÷</h1></div>
+                     <div class="num2"><h1 id="num2">Number</h1></div>
+                </div>
+                <div class="btns">
+                
+                    <input type="number" onfocus="this.value =''" name="answer" class="answer" id="answer" placeholder="Enter Ans 2 dec pnts">
+                    <div class="check" id="check">?</div>
+                    <button class="check-answer" id="checkAnswer">Check Answer</button>
+                    <button class="next-q" id="nextQ">Next Question</button>
+                    <div class="range-wrapper">
+                        <input type="number" onfocus="this.value =''" name="range" id="topRangeInput" class="range" placeholder="top num">;
+                        <input type="number" onfocus="this.value =''" name="range" id="bottomRangeInput" class="range" placeholder="bot num">;
+                        <button type="submit" name ="range" class="range-btn" id="rangeBtn">Submit</button>
+                    </div>
+                    <p class="instruction"> Enter Range Values </p>
+                    <p class="instruction"> Submit to Start App </p>
+                </div>
+            </div>
+        </section>
+    <script src="divide.js"></script>
+</body>
+</html>
